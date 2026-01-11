@@ -11,6 +11,8 @@ import psitLogo from "@/public/psit.png";
 import achievementPatent from "@/public/achievement_patent_v2.png";
 import achievementCoding from "@/public/achievement_coding_1768124361037.png";
 import achievementHackathon from "@/public/achievement_hackathon_1768124375270.png";
+import educationPlaceholder from "@/public/education_placeholder_1768141770648.png";
+
 
 export const links = [
     {
@@ -38,6 +40,10 @@ export const links = [
         hash: "#achievements",
     },
     {
+        name: "Education",
+        hash: "#education",
+    },
+    {
         name: "Contact",
         hash: "#contact",
     },
@@ -54,6 +60,9 @@ export const experiences = [
         company: "Bracketworks.io",
         logo: "/bracketworks.png",
     },
+] as const;
+
+export const education = [
     {
         title: "B.Tech in CSE",
         location: "PSIT Kanpur",
@@ -61,8 +70,28 @@ export const experiences = [
             "Currently pursuing B.Tech with 8.29 SGPA.",
         icon: React.createElement(LuGraduationCap),
         date: "2022 - 2026",
-        company: "Pranveer Singh Institute of Technology",
+        school: "Pranveer Singh Institute of Technology",
         logo: "/psit.png",
+    },
+    {
+        title: "Senior Secondary (Class XII)",
+        location: "Kanpur",
+        description:
+            "Completed Class 12th with Focus on Science and Mathematics.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2021",
+        school: "Sir Padampat Singhania Education Centre",
+        logo: "/school.png",
+    },
+    {
+        title: "Secondary (Class X)",
+        location: "Kanpur",
+        description:
+            "Completed Class 10th with excellent academic performance.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2019",
+        school: "Sir Padampat Singhania Education Centre",
+        logo: "/school.png",
     },
 ] as const;
 
@@ -71,7 +100,7 @@ export const projects = [
         title: "Voice-Driven Sentiment Analysis",
         description:
             "Speech-to-text pipeline for sentiment/sarcasm detection. Patent Pending.",
-        tags: ["Python", "ML", "Patent Published"],
+        tags: ["Python", "ML", "NLP", "Patent Published"],
         imageUrl: "/project_sentiment_1768121747170.png",
         githubUrl: "https://github.com/MaroofTechSorcerer/Voice-Driven-Sentiment-Analysis-with-Intelligent-Sarcasm-Detection",
         slug: "voice-sentiment-analysis",
